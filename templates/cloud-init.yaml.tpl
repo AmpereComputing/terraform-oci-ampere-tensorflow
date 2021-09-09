@@ -11,4 +11,4 @@ packages:
   - docker-ce-cli
 
 runcmd:
-  - echo 'OCI Ampere A1 provided by Terraform.' >> /etc/motd
+  - echo 'OCI Ampere Tensorflow provided by Terraform.' >> /etc/motd
