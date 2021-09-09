@@ -6,7 +6,7 @@
 
 ## Description
 
-Terraform code to launch a Ampere A1 Shape on Oracle Cloud Infrastructure (OCI) Free-Tier with a Tensorflow workload
+Terraform code to launch a Ampere A1 Shape on Oracle Cloud Infrastructure (OCI) Free-Tier with a Tensorflow workload running via Docker
 
 ## Requirements
 
@@ -25,8 +25,8 @@ Addtional tasks performed by this code:
 * Dynamically creating sshkeys to use when logging into the instance.
 * Dynamically getting region, availability zone and image id..
 * Creating necessary core networking configurations for the tenancy
-* Rendering metadata to pass into the Ampere A1 instance.
-* Launch 1 to 4 Ampere A1 instances with metadata and ssh keys with a Tensorflow workload
+* Rendering metadata to pass into the Ampere A1 instance to install and configure Docker and launch a Tensorflow workload
+* Launch 1 Ampere A1 instance with 24GB RAM, 4 Cores, and pass in rendered metadata 
 * Output IP information to connect to the instance.
 
 
