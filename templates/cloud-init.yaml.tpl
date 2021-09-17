@@ -21,5 +21,25 @@ system_info:
   default_user:
     groups: [docker]
 
+
+write_files:
+  - path: /opt/onspecta/docker-compose.yml
+    permissions: "0644"
+    owner: "ubuntu"
+    content: |
+      version: "3.3"
+      services:
+        image_segmentation:
+          image: ghcr.io/onspecta/dls_image_segmentation:1.0.0
+          ports:
+            - "8000:8888"
+          privileged: true
+        yolo3_tf2:
+          image: ghcr.io/onspecta/dls_yolov3_tf2:1.0.0
+          ports:
+            - "9000:8888"
+          privileged: true
+
 runcmd:
-  - echo 'OCI Ampere Tensorflow provided by Terraform.' >> /etc/motd
+  - echo 'OCI Ampere Onspecta Tensorflow provided by Terraform.' >> /etc/motd
+  - docker-compose -f /opt/onspecta/docker-compose.yml up -d
