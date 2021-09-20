@@ -30,12 +30,12 @@ write_files:
       version: "3.3"
       services:
         image_segmentation:
-          image: ghcr.io/onspecta/dls_image_segmentation:1.0.0
+          image: ghcr.io/onspecta/dls_image_segmentation:1.0.1
           ports:
             - "8000:8888"
           privileged: true
         yolo3_tf2:
-          image: ghcr.io/onspecta/dls_yolov3_tf2:1.0.0
+          image: ghcr.io/onspecta/dls_yolov3_tf2:1.0.1
           ports:
             - "9000:8888"
           privileged: true
