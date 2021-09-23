@@ -29,6 +29,11 @@ write_files:
     content: |
       version: "3.3"
       services:
+        ssd_mobilenet_v2:
+          image: ghcr.io/onspecta/dls_ssd_mobilenet_v2:1.0.0
+          ports:
+            - "7000:8888"
+          privileged: true
         image_segmentation:
           image: ghcr.io/onspecta/dls_image_segmentation:1.0.1
           ports:
