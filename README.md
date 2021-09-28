@@ -4,9 +4,40 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+# Demo Descriptions
+
+This terraform code supports two demos: 
+* Object Detection And Classification (Latency Demo)
+* Image Segmentation (Throughput Demo)
+
+After completing the instructions of **"Launching A1 Shape With Terraform"** below,
+examine the IP address of the compute instance using Oracle Cloud Console. 
+
+The demos run on Jupyter Notebook throught browser **(Please use Chrome for the best result)**
+
+
+## Latency Demo URL on port 7000 ##
+
+* Point browser to http://<instance ip>:7000
+* Click folder "mldemos"
+* Click "ssd_mobilenet_v2"
+* Click "detect_video_altra.ipynb". The kernel script is displayed.
+* Click Run. 
+* The video should be displayed on the brower with the detection results.
+  
+## Throughput Demo URL on port 8000 ## 
+* Point browser to http://<instance ip>:8000
+* Click folder "mldemos"
+* Click "image_segmentation"
+* Click "oxford_pets_image_segmentation_altra.ipynb". The kernel script is displayed.
+* Click Run through the last kernel cells. 
+* It will take a minute or two to process all the images. The FPS is displayed with selective images and results.
+
+# Lauching A1 Shape With Terraform
+
 ## Description
 
-Terraform code to launch a Ampere A1 Shape on Oracle Cloud Infrastructure (OCI) Free-Tier with a Tensorflow workload running via Docker
+Terraform code to launch a Ampere A1 Shape on Oracle Cloud Infrastructure (OCI) Free-Tier with a Tensorflow DEMO workload running via Docker.
 
 ## Requirements
 
