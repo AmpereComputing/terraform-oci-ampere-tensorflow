@@ -11,7 +11,8 @@ This terraform code supports two demos:
 * Image Segmentation (Throughput Demo)
 
 After completing the instructions of **"Launching A1 Shape With Terraform"** below,
-examine the IP address of the compute instance using Oracle Cloud Console. 
+examine the IP address of the compute instance using Oracle Cloud Console. Usually, it will take a few minutes, after the
+instance is provisioned, for docker containers to be initialized and started. 
 
 The demos run on Jupyter Notebook throught browser **(Please use Chrome for the best result)**
 
