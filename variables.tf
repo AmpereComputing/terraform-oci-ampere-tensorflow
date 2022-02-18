@@ -51,7 +51,7 @@ variable "ampere_a1_vm_memory" {
 }
 
 variable "ampere_a1_cpu_core_count" {
-    default = "4"
-    description = "Default core count for Ampere A1 instances in OCI Free Tier"
+    default = "6"
+    description = "Default core count for Ampere A1 instances in OCI"
     type    = string
 }
