@@ -30,17 +30,17 @@ write_files:
       version: "3.3"
       services:
         ssd_mobilenet_v2:
-          image: ghcr.io/onspecta/oci_demo_ssd_mobilenet_v2:stable
+          image: ghcr.io/amperecomputingai/oci_demo_ssd_mobilenet_v2:stable
           ports:
             - "7000:8888"
           privileged: true
         image_segmentation:
-          image: ghcr.io/onspecta/oci_demo_image_segmentation:stable
+          image: ghcr.io/amperecomputingai/oci_demo_image_segmentation:stable
           ports:
             - "8000:8888"
           privileged: true
         live_cam:
-          image: ghcr.io/onspecta/oci_demo_live_cam_demo:stable
+          image: ghcr.io/amperecomputingai/oci_demo_live_cam_demo:stable
           ports:
             - "9000:8888"
           privileged: true
